@@ -11,12 +11,12 @@ function FirstTask() {
     inputRef.current?.focus();
   }, []);
 
-  // هندل تغییر مقدار ورودی
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(e.target.value);
   };
 
-  // هندل ارسال فرم
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log(`currentAmount : ${inputValue} | previousAmount : ${prevValueRef.current}`);
