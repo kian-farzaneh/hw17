@@ -8,7 +8,7 @@ function HomeComponents() {
             <FirstTask />
         </div>
         <div className="w-full border border-black"></div>
-        <div>
+        <div className="flex flex-col justify-center items-center">
             <SecondTask />
         </div>
     </>;
