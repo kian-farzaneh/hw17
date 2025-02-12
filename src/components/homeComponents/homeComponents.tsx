@@ -2,6 +2,7 @@ import React from "react";
 import FirstTask from "../firstTask/firstTask";
 import SecondTask from "../secondTask/secondTask";
 import { ThirdTask } from "../thirdTask/ThirdTask";
+import { ForthTask } from "../forthTask/ForthTask";
 
 function HomeComponents() {
     return <>
@@ -20,6 +21,15 @@ function HomeComponents() {
         <div className="p-8 flex flex-col justify-center items-center">
             <ThirdTask />
         </div>
+    
+        <div className="w-full border border-black"></div>
+
+        <div className="p-8 flex flex-col justify-center items-center">
+            <h1 className="m-2 w-full mt-3 font-bold text-[25px] flex justify-center items-center">Forth Task</h1>
+            <ForthTask name="shanbeh" lastName="kabolizadeh" phoneNumber={987765543} />
+            <ForthTask name="jomeh" lastName="tatilianpoor" phoneNumber={235235253} />
+        </div>
+
     </>;
 };
 
