@@ -46,7 +46,7 @@ function SecondTask() {
     };
 
     function handleSetStep(e:React.ChangeEvent<HTMLInputElement>) {
-        dispatch({type: 'setStep' , step: Number(e.target.value)})
+        dispatch({type: 'setStep' , step: +(e.target.value)})
     }
 
     return <>

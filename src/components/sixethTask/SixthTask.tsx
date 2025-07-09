@@ -53,14 +53,14 @@ const SixthTask = () => {
             <div>
                 <input type="text" value={query} onChange={handleSearch} placeholder="جستجو..." />
                 <ul>
-                    {filteredUsers.map(user => (
+                    {filteredUsers?.map(user => (
                         <li key={user.id}>{user.name}</li>
                     ))}
                 </ul>
             </div>
             
 
-            {contacts.map((item) => (
+            {contacts?.map((item) => (
                 <div key={item.id} className="mt-6">
                     <Card name={item.name} phoneNumber={item.phoneNumber} relationShip={item.relation} email={item.email} />
                 </div>
